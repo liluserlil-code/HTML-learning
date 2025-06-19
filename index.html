@@ -17,7 +17,7 @@
 </head>
 <body>
     <h1>Изучение HTML</h1>
-    <h2>Что внутри &lt;head&gt;? Метаданные в HTML</h2>
+    <h2>1. Что внутри &lt;head&gt;? Метаданные в HTML</h2>
     <p>Элемент head HTML-документа не отображается на странице в веб-браузере. Он содержит такую информацию, как:
 
 заголовок (title) страницы
@@ -35,7 +35,7 @@
     <p>Добавление иконки показано на строке 13 этого документа</p>
     <h3>Подключение CSS и JavaScript</h3>
     <p>Современные сайты используют CSS, чтобы выглядеть привлекательнее, и добавляют интерактивные функции через JavaScript: видеоплееры, карты, игры. Обычно связанные стили добавляют на страницу через элемент &lt;link&gt;, а скрипты — через элемент &lt;script&gt;. (на 14-16 строках этого документа)</p>
-    <h2>Основы редактирования текста в HTML</h2>
+    <h2>2. Основы редактирования текста в HTML</h2>
     <h3>Списки: упорядочные (ol) и неупорядоченные (ul) и вложенный</h3>
     <p>
         <ul>
@@ -68,10 +68,123 @@
                 </ol>
         </ul>
     </p>
+    <p>dl - список терминов с определениями; dt - термин в списке; dd - определение термина (на 72 строке этого документа)
+        <dl>
+            <dt>Firefox</dt>
+            <dd>
+                A free, open source, cross-platform, graphical web browser developed by the
+                Mozilla Corporation and hundreds of volunteers.
+            </dd>
+            <dt>Microsoft</dt>
+            <dd>
+                Компания по производству ПО.
+            </dd>
+            <!-- Other terms and descriptions -->
+        </dl>
+    </p>
     <h3>Курсив и жирный текст</h3>
     <p>
         Я <em>рад</em>, что ты не <em>опоздал</em>.
-        (на 72 строке этого документа)
+        (на 87 строке этого документа)
     </p>
+    <p>
+        Я <strong><em>рад</em></strong>, что <strong>ты</strong> не <em>опоздал</em>.
+    </p>
+    <h3>Таблицы</h3>
+    <p>(на 95 строке этого документа)</p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Шапка таблицы 1</th> <!-- colspan объединяет ячейки -->
+            </tr>
+            <tr>
+                <th>Машины</th>
+                <th>Собаки</th>
+                <th>Хлеб</th>
+                <th>Вес</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mercedes</td>
+            <td>битбуль</td>
+            <td>белый</td>
+            <td>83 кг</td>
+        </tr>
+        <tr>
+            <td>BMW</td>
+            <td>чихуяхуя</td>
+            <td>черный</td>
+            <td>71 кг</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">Подвал таблицы</td> <!-- colspan объединяет ячейки -->
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <thead>Шапка таблицы 2</thead>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Knocky</td>
+            <td>Flor</td>
+            <td>Ella</td>
+            <td>Juan</td>
+        </tr>
+        <tr>
+            <td>Breed</td>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Owner</td>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <td>Eating Habits</td>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+    <h3>Формы ввода данных</h3>
+    <p>Многострочный текст (на 168 строке этого документа)</p>
+    <textarea name="text" id="text" placeholder="textarea" style="height: 300px; width: 500px;"></textarea>
+    <p>Кнопка (на 170 строке этого документа)</p>
+    <button>Button</button>
+    <p>Cписок (select) (на 172 строке этого документа)</p>
+    <select name="select" id="select">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+        <option value="4">option 4</option>
+    </select>
+    <p>Инпут (на 179 строке этого документа)</p>
+    <input type="text">
+    <p style="font-size: medium;"><strong><em>Также есть: 
+        <ul>
+            <li>form (сама форма для заполнения)</li>
+            <li>label Подпись к полю ввода</li>
+            <li>fieldset Группировка полей формы</li>
+            <li>legend	Заголовок fieldset</li>
+        </ul>
+    </em></strong></p>
+    <h2>3. Семантические HTML-теги (HTML5)</h2>
 </body>
 </html>
